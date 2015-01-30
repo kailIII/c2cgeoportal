@@ -47,7 +47,7 @@ install:
 script: 
 # Actually don't work on travis see:
 # https://travis-ci.org/camptocamp/c2cgeoportal/jobs/48455036#L5312
-#- travis/test-new-project.sh
+- travis/test-new-project.sh
 - travis/status.sh /tmp/test/
 - travis/empty-make-new-project.sh
 - travis/empty-make.sh -f travis.mk build
